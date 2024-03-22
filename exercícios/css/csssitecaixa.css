@@ -1,0 +1,107 @@
+@charset "utf-8";
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(212, 212, 212);
+    margin: 0px;
+}
+
+
+header {
+    background-color: white;
+    margin: auto;
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 0.4em;
+}
+
+main {
+    background-color: white;
+    margin: 6px auto 6px auto;
+    text-align: justify;
+    padding: 5px 10px;
+    border-radius: 0.4em;
+
+}
+
+footer {
+    background-color: rgb(236, 236, 236);
+    height: 21px;
+    padding: 5px 10px;
+    text-align: center;
+    margin: 0px;
+    border-radius: 0.4em;
+    box-shadow: 5px 4px 3px #00000047;
+
+}
+
+footer > p {
+    margin: 0px;
+}
+
+article > aside {
+    font-weight: 600;
+    text-align: right;
+    color: gray;
+    padding: 2px;
+}
+header > nav > a {
+    margin: 0px 16px 0px 16px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+header > nav > a:hover {
+    color: blueviolet;
+}
+
+#assuntos {
+    color: rgb(122, 122, 122);
+    font-size: 0.8em;
+}
+
+/*bola*/
+#bola {
+    height: 100px;
+    width: 100px;
+    background-color: none;
+    margin: 10px auto;
+    border-radius: 100%;
+    border: 5px solid purple;
+}
+#bola:hover {
+    height: 100px;
+    width: 100px;
+    background-color: rgb(103, 232, 255);
+    margin: 10px auto;
+    border-radius: 100%;
+    border: 5px solid rgb(31, 203, 255);
+}
+#bola:active {
+    height: 100px;
+    width: 100px;
+    background-color: rgba(62, 162, 255, 0.849);
+    margin: 10px auto;
+    border-radius: 100%;
+    border: 5px solid rgb(12, 37, 255);
+}
+/*borda personalizada*/
+
+#borda {
+    border: 20px solid black;
+    padding: 10px;
+    margin: 5px;
+    border-image-source: url(Borda/borda.png);
+    border-image-slice: 39;
+    border-image-repeat: repeat;
+    background-color: rgb(41, 41, 41);
+}
+/*ou*/
+#borda2 {
+    border: 20px solid rgba(209, 209, 209, 0);
+    padding: 10px;
+    margin: 5px;
+    border-image: url(Borda/borda.png) 26 repeat;/*reduzido*/
+    background-color: rgb(41, 41, 41);
+    border-image: url(Borda/borda.png) 26 repeat;
+}

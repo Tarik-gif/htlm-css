@@ -1,0 +1,33 @@
+@charset "utf-08";
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#d1, #d2, #d3 {
+    display: inline-block;
+    background-color: rgb(189, 189, 189);
+    text-align: center;
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+    
+}
+
+#d1:hover, #d2:hover, #d3:hover {
+    background-color: rgb(173, 113, 230);
+}
+
+#animação:hover {
+    color: rgb(255, 38, 0);
+}
+
+#animação > p {
+    display: none;
+}
+
+#animação:hover > p {
+    display: block;
+    color:white;
+    background-color: rgb(196, 18, 18);
+}

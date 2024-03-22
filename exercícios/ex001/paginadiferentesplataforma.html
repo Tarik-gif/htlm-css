@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pagina4</title>
+    <style>
+        .rodapé {
+            font-size: 150%;
+        }
+        body {
+            background-color: rgb(190, 161, 134);
+        }
+    </style>
+</head>
+<body>
+    <div class="rodapé">
+        <p>Voltar para o <a href="../ex001/tudo sobre o sistema.html">home</a></p>
+        <h1>Imagem dinâmica</h1>
+        <p>Tente abrir esse site em varios dispositivos diferentes ou aumente e diminua o tamanho do navegador. </p>
+    </div>
+
+    <picture>
+        <source media="(max-width: 720px)" srcset="imagensp/p300.png" type="image/png">
+        <source media="(max-width: 1020px)" srcset="imagensp/m700.png" type="image/png">
+        <img src="imagensp/g1000.png" alt="imagem flexivel" style="height: 100%; width: 100%; overflow: hidden;">
+    </picture>
+
+    <h1>Reproduzindo audio</h1>
+    <p>Reproduzir audio nesta pagina</p>
+    <audio src="midia/sdp.mp3" controls autoplay loop></audio><!-- Esse é o mais simples, e tem navegador que não tem compatibilidade. MP3, Wave, ogg. é melhor usar o de baixo-->
+
+    <audio preload=" metadata" autoplay controls loop><!--O preload é para carregar, se vc coloca none (não carrega nada), auto, ele só carrega o site dps do audio ser carregado, o melhor é o metadata, ele só carrega o nome e algumas informações--> <!--O autoplay não está funcionando-->
+        <source src="midia/sdp.mp3" type="audio/mpeg">
+        <source src="midia/sdp.mp3" type="audio/ogg">
+        <source src="midia/sdp.mp3" type="audio/wave">
+        <p>Infelizmente seu navegador não consegue reproduzir audio. <a href="midia/sdp.mp3">click aqui para baixar no seu navegador</a></p>
+        
+        <!--Essa é a outra solução, onde ele tenta resolver o problema--> 
+    </audio>  
+    
+    <H1>Colocando videos hospedados localmente</H1>
+    <p>Este video está hospedado no meu próprio servidor</p>
+    <p>Chico Boarque - Agora eu era Herói</p>
+    <!--mp4, ogv, webm sendo o host-->
+    <video controls style="height: 400px; border-radius: 25px; "  poster="midia/Desktop - 1.png" loop autoplay title="Video do meu pc">
+        <source src="midia/cavaloingles.mp4" type="video/mp4">
+        <source src="midia/Cavaloingles2.webm" type="video/webm">
+        <source src="midia/cavaloingles.ogv" type="video/ogg">
+        <p>Seu navegador não tem compactibilidade com videos!</p><!--Hospedar (ser o host) assim faz ficar caro e pessado-->
+    </video>
+    <p>Este video está hospedado no Youtube</p>
+    <!--mp4, ogv, webm hospedando de outro lugar-->
+    <iframe style="height: 400px; width: 724px;border-radius: 25px;" src="https://www.youtube.com/embed/RQjbE_BIn9A?si=vC-vUb1upVPgXGv_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <!--Tem o vimeo para fazer hospedagem de video-->
+
+    <p>Este video está hospedado no Vimeo</p>
+    <iframe src="https://player.vimeo.com/video/152471486?h=0d11ea644c&byline=0&portrait=0" width="724" height="400" style="border-radius: 25px;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+
+    <p draggable="true">
+        Esse paragrafo é arrastavel
+    </p>
+
+    <input type="text" name="caixadetexto" id="text" spellcheck="true" style="font-size: 30px;"><!--spell corrige a ortografia-->
+
+</body>
+</html>

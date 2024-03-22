@@ -1,0 +1,50 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Marvel:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Marvel:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    --Marvel: "Marvel";
+    --Martelsans: "Martel Sans";
+    --cormenu: #5869FF;
+}
+
+body {
+    font-family: var(--Marvel), Arial, Helvetica, sans-serif;
+    background-image:url("tudo/img-site/plano-de-fundos/Gradient.png");
+    padding: 0px;
+    margin: 0px;
+}
+
+header {
+    margin: 0px;
+    padding: 0px;
+}
+
+.background1 {
+    background-image: url("tudo/img-site/plano-de-fundos/armario.png");
+    background-image: 50%;
+    height: 700px;
+}
+
+.midle {
+    padding: 20px;
+    text-align: center;
+}
+
+.midle p {
+    margin: 0;
+    padding: 16px;
+    display: inline-block;
+    width: 500px;
+    text-align: center;
+    color: white;
+    margin-right: 5%;
+    padding-bottom: 25px;
+    font-size: 200%;
+}
+
+.midle img {
+    display: inline-block;
+    width: 50%;
+    
+}

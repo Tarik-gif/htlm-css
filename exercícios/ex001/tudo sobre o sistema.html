@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"> <!--O index significa pagina principal, por isso que eu deveria por esse nome como o nome do arquivo-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="IMAGENS/favicon.ico" type="image/x-icon">
+    <title>Brilhantes</title>
+    <style> <!--CSS- Ele fica dentro do head-->
+        mark {
+            background-color: lime;
+        }
+
+        body {
+            background-color: rgb(221, 191, 250);
+        }
+
+        .titulo {
+            text-align: center;
+            
+        }
+
+        #diferente {
+            color: blueviolet;
+        }
+
+        .classpadrao {
+            color: yellow;
+        }
+
+        #classpadrao2 {
+            color: green;
+        }
+        a {
+            color: yellow; 
+            font-style: unset;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="titulo">Opa</h1> 
+    
+
+    <p>Esse é o meu <br> quinto HTML</p> 
+    Essa é a pagina Home, click <a href="pagina2.html" rel="next">aqui</a> caso queira ir para a 1 (varios emojis)</p>
+    <p>Para ir ate a pagina 2 (tipo um curriculo com as redes sociais), <a href="noticias/pagina3.html" target="_self">click aqui</a>
+    <p>E para ir até a 3 (todas as tags principais), basta <a href="pagina4.html">clicar aqui</a></p>
+    <p>E para ir até a 4 (pagina de diferentes plataforma, imagem), basta <a href="paginadiferentesplataforma.html">clicar aqui</a></p>
+    <p>Para ir ate a pagina 5 (css), <a href="cssestilos.html" target="_self">click aqui</a>
+    <p>Pagina do desafio <a href="desafio/homedesafio.html">aqui</a></p>
+    <p id="diferente">vamos colcoar símbolos especiais:
+        &reg;
+        &copy;
+        &trade;
+        &real;
+        &Delta;
+        <address>Aqui fica o endereço</address>
+    </p>
+
+    <p class="classpadrao">Tlg?</p>
+    <p id="classpadrao2">vc manja?
+        neh?
+    </p>
+
+    <p>Negrito / destaque
+    </p>
+    <p>sem semantica é assim <b>negrito</b></p>
+    <p>com semantica é assim <strong>negrito</strong></p>
+    <br>
+    <p>italico / êsfase</p>
+    <p>Aqui é o italico sem semantica <i>italico</i></p>
+    <p>aqui é o italico com semantica <em>italico</em> </p>
+    <p>Podemos criar também um <mark>texto marcado</mark> usando a tag mark.</p>
+    <p>Podemos criar também um <mark style="background-color: rgb(0, 255, 255);">texto marcado</mark> usando a tag mark.</p>
+    <p>Texto <big>grande</big>  e <small>pequeno</small> nessa linha</p> <!--big caiu pq isso se faz no css--> 
+    <!--small não caiu pq ela tem significado, geralmente usado para letrar miúdas com informações importante-->
+    <p>Podemos marcar um texto como <del>excluido</del>, para mostrar que ele deve ser lido mas não considerado</p>
+    <p>podemos marcar um texto como <ins>inserido</ins> para dar êsfase e indicar que ele foi adicionado dps</p>
+    <p>Pode usar o sublinhado, <u>que não é semantico e provavelmente vai cair, já que se faz no css</u>, se usa o u</p>
+    <p>Tem o sobre escrito e o sub escrito, para fazer o x<sup>20-2</sup> ou o H<sub>2</sub>0</p>
+
+
+    <!--Ctrl + shift + p coloca teg no grupo todo-->
+    <!--CTRL + SPACE ABRE A PASTA E SELECIONA OQ VC QUER-->
+
+    <h1>Outras formatações</h1>
+    <h2>código fonte</h2>
+    <p>O comando <code><strong>document.getElementById('teste')</strong></code> é escritto em linguagem JavaScript.</p>
+    <pre> <!--para manter a formatação-->
+        <code> <!--para colocar a fonte de codigo-->
+    n = int(input("Digite o número 30 ou o 40:"))
+    If n == 30:
+        print(f"30? legal")
+    Else:
+        print(f"40? massa")
+    print("Fim do programa")
+        </code>
+    </pre>
+
+    <h2>Citações</h2>
+    <p>Como diria o pai de um amigo: <q>o pc é um burro muito rápido.</q></p> <!--O q faz a citação, ele da sentido de sitação, e não só a forma-->
+    <h2>Citação completa</h2>
+    <p>Segundo Gustavo Guanabara no video em curso:</p>
+    <blockquote cite="sla"> <!--Você sita algo de alguem-->
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus provident nulla voluptatem impedit reiciendis quod totam non numquam, nostrum aliquid cum, unde explicabo maxime distinctio error minima aperiam dicta nam.
+    </blockquote>
+    <h2>Abreviação</h2>
+    <p>Estou estudando <abbr title="Hyper Text Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Bala d+</p> <!--Ele abrevia o texto-->
+    <h2>Texto invertido</h2>
+    <p><bdo dir="rtl">Estou aprendendo a criar coisas em HTML</bdo></p>
+     <h1>Listas</h1>
+     <h2>listas ordenadas</h2>
+     <ol> <!--Faz uma lista numerada automaticamente. Tem tipos como: 1, A, a, I, i-->
+        <li>Acordar</li>
+        <li>Tomar café</li>
+        <li>Escovar os dentes</li>
+        <li>Sla oq mais</li>
+     </ol>
+     <ol type="A" start="4"> <!--Vc escolher onde começar e o estilo da contagem--> 
+        <li>Acordar
+        <li>Tomar café
+        <li>Escovar os dentes<!--Não é obrigado fechar, isso é opcional-->
+        <li>Sla oq mais
+     </ol>
+
+     <h2>Listas não Ordenadas</h2>
+     <ul type="disc"><!--Tem varios tipos: o disc, circle, square-->
+        <li>Pão
+        <li>Leite
+        <li>Tomate
+        <li>Leite
+     </ul>
+
+     <h2>Juntando listas</h2>
+     <ol>
+        <li>Fruta
+        <ul>
+            <li>maçã
+            <li>Banana
+            <li>Tomate
+        </ul>
+        <li>Salgadinho
+        <ul>
+            <li>Doritos
+            <li>Ruffles
+            <li>Fandangos
+        </ul> 
+     </ol>
+     <!--Se apertar alt e clickar onde vc quiser, da para vc escrever e excuir em varias linha diferentes-->
+     <h2>Lista de definição</h2>
+     <dl>
+        <dt>Termo</dt>
+        <dd>Descrição</dd>
+        <br>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação para a criação do conteúdo de um site</dd>
+     </dl>
+
+     <h1>Usando links</h1>
+     <h2>Externos</h2>
+     <p>Vc pode acessar meu <a href="https://www.google.com/search?q=a%20minha%20empresa&mat=CZ272lIxKidNEkwB7PxHsdNrm4tHct20LTuQ4RIGjeUAD2LHt0vt1QqahUAqjbTynqhkljZ8NAp4fpMe_v63ZqHUKG6Lk3y9qUvZUxxEmSfYZttRpIwG&hl=pt-PT&authuser=0&ved=0CAEQrMcEahcKEwiYgpDb_O-EAxUAAAAAHQAAAAAQAg" target="_blank"  rel="external">repositório publico</a><!--A tag <a> faz essa ligação para links. O target _blank vai abrir em outra aba, e o rel external vai dizer que esse documento não faz parte do seu site, e é uma site externo. Tem o "referrer noopaner" noopener evita que a pagina de destino acesse a de origem, e o noferrer evita que a mesma receba informações de referência da sua pagina e o nofollow é para o mecanismo de busca saber que eu não garanto ele como seguro. --> no Github</p>
+    
+    <h2>Internos</h2>
+    <p>Essa é a pagina 1, click <a href="pagina2.html" rel="next">aqui</a> caso queira ir para a 2</p>
+    <p>Para ir ate a pagina 2, <a href="noticias/pagina3.html" target="_self"> <!--O self significa que vc está vinculado ao seu próprio site-->click aqui</a></p> <!--No href, vc pode colcoar o ../ (volte uma pagina) para entrar em uma pasta atrás, e o ./ (memsa pasta)para a mesma pasta-->
+
+    <h1>Links para download</h1>
+    <ul>
+        <li><a href="livro/10 - Ligações em toda parte.pdf" download="10 - Ligações em toda parte.pdf" type="application/pdf">Baixar o livro em PDF</a></li> <!--# deixar o link vazio--> 
+        <!--O type application/pdf é o midia type dele, serve para baixar. O download faz isso tbm, porem não está funcionando. Precisa olhar qual é o type no iana.org/assignments/media-types, já que cada arquivo tem o seu-->
+        <li><a href="livro/10 - Ligações em toda parte.zip" download="10 - Ligações em toda parte.pdf" type="application/zip">Livro compactado</a></li> <!--Aqui o download funciona, e baixa o zip, o type força ele a baixar-->
+    </ul>
+
+    
+
+
+
+</body>
+</html> 

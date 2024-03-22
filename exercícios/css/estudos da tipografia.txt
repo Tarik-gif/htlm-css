@@ -1,0 +1,27 @@
+Estudo da tipografia:
+ Anatomia do tipo:
+  todo fonte tem como base a 'altura x' (o x minúsculo determina a altura de todas as letras minúsculas)
+  e a 'altura das maiúculas'
+  A 'altura ascendente' é a altura do resto das letras minúsculas (o b tem essa perninha maior, e ela passa do x ex: bx)
+  e também vai ter a altura dq passou para baixo (exemplo o g e j), que se chama descendente.
+  E a altura total se chama corpo (tudo dela)
+
+  Coisas que só algumas fontes tem:
+   serifa: Serve para gerar uma "linha" imaginaria e facilitar a leitura das palavras (eram úteis para a leitura em escritas no papel).
+   familia: á Font Arial tem a familia light, semi-bold, bold, extra-bold.
+   
+  Categorias de Fontes:
+   serifadas - tem serifa (boa para textos longos em telas)
+   sans-serif - não tem serifa (boa para textos longos em sites)
+   monoespaçadas - tem os espaçamentos iguais 
+   handwriting - simula a calegrafia humana
+   fontes comemorativas ou display - ela não se preocupa em obdecer as ideias anatomicas.
+
+Site bom para isso:
+ css web safe font combinations (w3schools.com)
+ google fonts (para importar fontes)
+
+Sites para achar fonts:
+  https://www.whatfontis.com (melhor)
+  https://www.fontsquirrel.com
+  https://www.myfonts.com

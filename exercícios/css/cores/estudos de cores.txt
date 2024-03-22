@@ -1,0 +1,15 @@
+Emoções de cores:
+ Piscologia das cores! Estudar para saber mais.
+
+Harmonia de cores (circulo cromatico):
+ cores primárias: Amarelo, vermelho e azul.
+ cores secundarias:Laranja, verde e violeta (roxo)
+ cores terciárias: São todas as cores entre a primárias e secundarias (os nomes geralmente são uma mistura de primária e secundaria)
+ temperaturas de cores: do amarelo até o verde
+
+Ferramentas:
+ https://color.adobe.com/pt/create/color-wheel (ajuda a criar paletas)
+ https://paletton.com/#uid=15c0u0kllllaFw0g0qFqFg0w0aF (monta um site de exemplo)
+ https://coolors.co/0c120c-c20114-6d7275-c7d6d5-ecebf3 (bom para procurar o tom base)
+ 
+ 

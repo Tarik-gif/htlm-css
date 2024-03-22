@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilos Externos2</title>
+    <link rel="stylesheet" href="csspadrão.css">
+    <style>
+        *{ /*configuração global css*/
+        color: #9e9e9e;    
+        }
+        body {
+            background-image: linear-gradient(360deg, rgb(209, 20, 184) 30%, rgb(11, 11, 224), rgb(1, 1, 90)); /*degrade (left, right, top, bottom). Coloque quantas cores quiser*/
+            height: 100%;
+            color: #868686;
+            /*deg é angulo. Tem o radial-gradient, e nele vc coloca o circle para fazer um foco. */
+        }
+    </style>
+
+</head>
+<body>
+    <!--Representação por nome-->
+    <h2 style="background-color: blue; color: white;">Exemplo de cores</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem molestias rerum quas amet voluptatem assumenda dolor atque, tempore totam excepturi blanditiis porro unde doloremque eum minima fugit possimus, facilis aliquid?</p>
+
+    <!--Representação por códigos Hexadecimais (16 digitos, 0 1 2 3 4 5 6 7 8 9 A B C D E F)
+    #11223344 - 1 red, 2 é verde e 3 azul, fazendo uma mistura ai. o 4 é o quão transparente ele ta -->
+    <h2 style="background-color: #ff1e00; color: #ffffff;">Exemplo de cores</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem molestias rerum quas amet voluptatem assumenda dolor atque, tempore totam excepturi blanditiis porro unde doloremque eum minima fugit possimus, facilis aliquid?</p>
+
+    <!--Representação em RGB - red, green, blue-->
+    <h2 style="background-color: rgba(230, 208, 10, 0.9); color: rgb(255, 255, 255);"> Exemplo de cores</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem molestias rerum quas amet voluptatem assumenda dolor atque, tempore totam excepturi blanditiis porro unde doloremque eum minima fugit possimus, facilis aliquid?</p>
+
+    <!--Representação em HSL - hue, sturation, luminosity-->
+    <h2 style="background-color: hsl(123, 93%, 39%); color: hsl(0, 0%, 100%);">Exemplo de cores</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem molestias rerum quas amet voluptatem assumenda dolor atque, tempore totam excepturi blanditiis porro unde doloremque eum minima fugit possimus, facilis aliquid?</p>
+
+    <h2 style="background-color: rgb(197, 16, 221); color: rgb(255, 255, 255);">Exemplo de cores</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem molestias rerum quas amet voluptatem assumenda dolor atque, tempore totam excepturi blanditiis porro unde doloremque eum minima fugit possimus, facilis aliquid?</p>
+
+    
+</body>
+</html>

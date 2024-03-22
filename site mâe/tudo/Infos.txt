@@ -1,0 +1,26 @@
+fonts:
+1 marvel ( "Marvel" )
+ @import url('https://fonts.googleapis.com/css2?family=Marvel:ital,wght@0,400;0,700;1,400;1,700&display=swap')
+2 Martel Sans ( "Martel Sans" )
+ @import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Marvel:ital,wght@0,400;0,700;1,400;1,700&display=swap')
+
+
+
+/1part/ 
+MARVEL
+Bem-vindos ao Reforço e Acompanhamento Escolar *Brilhantes*, um espaço dedicado ao aprimoramento intelectual dos nossos alunos.
+Iniciada em 2019 como aulas particulares em domicílio, nossa escola cresceu e agora oferece um ambiente acolhedor para o aprendizado
+
+[IMAGEM AO LADO]
+
+/2part/
+MARVEL
+AGENDE A SUA VISITA!
+MARVEL
+entre em contato pelas redes sociais
+
+celulares (lado a lado)
+
+[IMAGEM construindo]
+MARTEL SANS
+saiba mais

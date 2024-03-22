@@ -1,0 +1,71 @@
+@charset "utf-8";
+/*Box-level ocupa a barra toda e começa da linha de baixo. (div, h1 ao h6, p, main, header, nav, article, aside, footer, form, video.)
+Inline-level pula para o lado, desenha exatamente do tamanho do elemento e dps não quebra a linha.(span, a, code, small, strong, em, sup e sub, label, button, input, select)*/
+
+h1 { /*box-level display:block*/
+    background-color: blueviolet;
+
+    padding: 10px 10px 10px 10px;
+    border-width: 7px;
+    border-style: solid;
+    border-color: rgb(63, 63, 63);
+
+    margin: 10px auto 20px auto;
+
+    outline: 4px;
+    outline-width: 5px;
+    outline-style: dashed;
+    outline-color: black;
+
+    height: 300px;
+    width: 300px;
+    text-align: center;
+}
+
+.inline { /*inline level display:inline*/
+    padding: 3px 10px 3px 10px;
+    border: 7px groove rgb(202, 202, 202)
+}
+
+.botao {
+    color: white;
+    text-decoration: none;
+}
+
+#botao {
+    font-size: 1.5em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+
+    background-color: blueviolet;
+    height: 40px;
+    width: 150px;
+    text-align: center;
+    padding-top: 4px;
+
+    margin: auto;
+    border-radius: 10px;
+}
+
+#botao:hover {
+    color: rgb(255, 255, 255);
+
+    background-color: rgb(235, 39, 225);
+}
+
+#botao:active {
+    font-size: 1.7em;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+
+    background-color: rgb(42, 12, 70);
+    height: 40px;
+    width: 150px;
+    text-align: center;
+    padding-top: 2px;
+    padding-bottom: 2px;
+
+    margin: auto;
+    border-radius: 10px;
+}

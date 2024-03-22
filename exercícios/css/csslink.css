@@ -1,0 +1,108 @@
+@charset "utf-8";
+/* 
+#  = id
+.  = class
+:  = pseudo-class
+:: = pseudo-element
+>  = clildren
+*/
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+    color: blueviolet;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+a:visited {
+    color: rgb(73, 23, 107);
+}
+
+a:hover {
+    color: violet;
+    text-decoration: underline;
+}
+
+a:active {
+    color: rgb(255, 0, 0);
+}
+
+a::after {
+    content: '[link]';
+    text-decoration: none;
+    font-weight: 400;
+    color: rgb(183, 119, 243);
+}
+
+a::before {
+    content: "☁";
+}
+
+
+
+/*botão*/
+
+.botao {
+    color: white;
+    text-decoration: none;
+    content: none;
+}
+
+#botao {
+    font-size: 1.5em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+
+    background-color: blueviolet;
+    height: 40px;
+    width: 150px;
+    text-align: center;
+    padding-top: 4px;
+
+    margin: auto;
+    border-radius: 10px;
+}
+
+#botao:hover {
+    color: rgb(255, 255, 255);
+
+    background-color: rgb(235, 39, 225);
+}
+
+#botao:active {
+    font-size: 1.7em;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+
+    background-color: rgb(42, 12, 70);
+    height: 40px;
+    width: 150px;
+    text-align: center;
+    padding-top: 2px;
+    padding-bottom: 2px;
+
+    margin: auto;
+    border-radius: 10px;
+}
+
+.botao:visited {
+    color: white;
+}
+.botao::after {
+    content: none;
+}
+.botao::before {
+    content: none;
+}
+.botao:hover {
+    color: white;
+    text-decoration: none;
+}
+.botao:active {
+    color: white; 
+}
+
