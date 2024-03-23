@@ -2,16 +2,24 @@
 
 body {
     height: 100vh;
+    /*
     background-image: url("../fundo001/imagens/wallpaper002.jpg");
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
+    */
     /*CONTAIN (imagem é 100% exibida), COVER (cobre a tela toda, mesmo que precisa picotar a imagem)*/
+
+    /*Shorthand- background
+    color - image- position - repeat - [size] (não funciona) - attachment*/
+    background: black url("../fundo001/imagens/wallpaper002.jpg") center center no-repeat fixed;
+    background-size: cover;
 }
 
 main {
     background-color: white;
-    width: 500px;
+    max-width: 700px;
     padding: 10px;
     margin: auto;
     border: 1px solid darkblue;

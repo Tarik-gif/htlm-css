@@ -1,0 +1,58 @@
+ Estrutura:
+    HEADER é o cabeçalho, apresentação do site
+    MAIN é o local do conteudo principal
+    FOOTER é o roda pé, local com informações de quem criou e etc.
+
+    NAV é o conteudo de navegação do cabeçalho
+    SECTION é a seção de conteudo
+    
+    ARTICLE é o artigo que vc ta colocando em seção
+
+    ASIDE é o conteudo que está relacionado ao artigo, mas é periférico (nome do autor)
+
+    OBS - Pode colocar article dentro de saction e vise-versa (assim como o resto, não tem restrição).
+
+Medidas CSS
+ Medidas Absolutas
+    cm, mm, in (polegadas), px, pt, pc (pt e pc é para papel)
+
+ Medidas Relativas
+    em (relativo ao tamanho padrão 16px), ex (relativo à altura de uma fonte), rem (igual o em, mas é relativo à fonte do body), vw (largura da tela %), vh (altura da tela), %
+    para font, se recomenda o uso do px e em (pela w3c)
+
+COMANDO CSS:
+ Em HTML é id = em CSS é #
+ Em HTML é class = em CSS é 
+ ID > Class
+#  = id
+.  = class
+:  = pseudo-class
+:: = pseudo-element
+>  = clildren
+
+Importar font CSS (do seu pc):
+    @font-face {
+    font-family: 'starboy';
+    src: url(fontes/starborn/Starborn.otf) format(opentype), url(fontes/starborn/Starborn.ttf) format(truetype);
+    font-weight: normal;
+    font-style: normal;
+
+    font-size: 1em;
+    text-decoration:normal;}
+  
+  tipos de "format()":
+    opentype (otf), truetype (ttf), embedded-opentype, truetype-aat (apple advanced typography) e svg
+
+imagem:
+    background-image: url("../fundo001/imagens/wallpaper002.jpg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+CONTAIN (imagem é 100% exibida), COVER (cobre a tela toda, mesmo que precisa picotar a imagem)
+
+Shorthand- background
+color - image- position - repeat - [size] (não funciona) - attachment
+
+    background: black url("../fundo001/imagens/wallpaper002.jpg") center center no-repeat fixed;
+    background-size: cover;
