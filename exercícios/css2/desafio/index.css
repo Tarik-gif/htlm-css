@@ -1,0 +1,108 @@
+@charset "utf-8";
+
+/*font titulo*/
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+/*font corpo*/
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+/*font rodapé*/
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lilita+One&display=swap');
+
+:root {
+    --fonttitulo: "Lilita One";
+    --fontcorpo: "Caveat";
+    --fontrodape: "Josefin Sans"
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+/*header*/
+header {
+   background-color: black;
+   color: white;
+   padding: 20px;
+   text-align: center;
+}
+
+header h1 {
+    font-size: 10vw;
+    font-family: var(--fonttitulo);
+    margin: 0px;
+    padding-top: 50px;
+
+}
+
+header p {
+    font-size: 18px;
+    font-family: var(--fontrodape);
+    margin: 20px 0px;
+}
+
+a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 19px;
+}
+
+a:hover {
+    text-decoration:underline;
+}
+
+/*main*/
+main {
+    font-family: var(--fontcorpo);
+    font-size: 5vw;
+    margin: 0px;
+    padding: 0px;
+    font-weight: 500;
+}
+
+.estrofes {
+    padding: 20px;
+}
+
+#pt2 {
+    background-image: url("imagem/beijaflor.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left center;
+}
+
+#pt4 {
+    background-image: url("imagem/newyork.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left center;
+}
+
+#pt2 p, #pt4 p {
+    color: white;
+    padding: 2%;
+    margin: 0px;
+    background-color: rgba(41, 41, 41, 0.466);
+    width: 50%;
+}
+
+/*footer*/
+footer {
+    background-color: black;
+    margin: 0px;
+    padding: 10px;
+    color: white;
+    font-size: 18px;
+}
+
+footer a {
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+footer p {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
