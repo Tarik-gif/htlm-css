@@ -20,7 +20,7 @@ body {
 
 /*header*/
 header {
-   background-color: black;
+   background-image: linear-gradient(180deg, black, rgb(36, 36, 36) );
    color: white;
    padding: 20px;
    text-align: center;
@@ -58,10 +58,11 @@ main {
     margin: 0px;
     padding: 0px;
     font-weight: 500;
+    background-color: white;
 }
 
 .estrofes {
-    padding: 20px;
+    padding: 30px;
 }
 
 #pt2 {
@@ -69,6 +70,7 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left center;
+    background-color: rgb(46, 46, 46);
 }
 
 #pt4 {
@@ -76,14 +78,15 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left center;
+    background-color: rgb(46, 46, 46);
 }
 
 #pt2 p, #pt4 p {
     color: white;
-    padding: 2%;
+    padding: 3%;
     margin: 0px;
-    background-color: rgba(41, 41, 41, 0.466);
-    width: 50%;
+    background-color: rgba(0, 0, 0, 0.459);
+    display: inline-block;
 }
 
 /*footer*/
