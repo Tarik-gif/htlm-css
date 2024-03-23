@@ -1,0 +1,10 @@
+@charset "utf-8";
+
+body {
+    height: 98vh;
+    border: 1px dashed black;
+    background-image: url("../fundo002/DINO.png");
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
