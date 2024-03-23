@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+body {
+    height: 100vh;
+    background-image: url("../fundo001/imagens/wallpaper002.jpg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*CONTAIN (imagem é 100% exibida), COVER (cobre a tela toda, mesmo que precisa picotar a imagem)*/
+}
+
+main {
+    background-color: white;
+    width: 500px;
+    padding: 10px;
+    margin: auto;
+    border: 1px solid darkblue;
+    border-radius: 20px;
+}
