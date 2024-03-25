@@ -11,40 +11,64 @@
 body {
     font-family: var(--Marvel), Arial, Helvetica, sans-serif;
     background-image:url("tudo/img-site/plano-de-fundos/Gradient.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     padding: 0px;
     margin: 0px;
 }
 
 header {
+    position: relative;
     margin: 0px;
     padding: 0px;
+    background-color: white;
+    height: 70px;
+}
+.logo-icon {
+    height: 4vw;
 }
 
-.background1 {
-    background-image: url("tudo/img-site/plano-de-fundos/armario.png");
-    background-image: 50%;
-    height: 700px;
+.rede-icon {
+    height: 6vh;
+    padding-left: 20px;
 }
 
-.midle {
-    padding: 20px;
-    text-align: center;
+.home-geral {
+    display: inline-flex;
 }
 
-.midle p {
-    margin: 0;
-    padding: 16px;
-    display: inline-block;
-    width: 500px;
-    text-align: center;
-    color: white;
-    margin-right: 5%;
-    padding-bottom: 25px;
-    font-size: 200%;
-}
-
-.midle img {
-    display: inline-block;
-    width: 50%;
+.home-geral p {
+    padding: 15px;
+    font-size: 32px;
+    margin: 0px;
     
+}
+
+#rede {
+    float: right;
+    margin: 13px;
+    padding-right: 2%;
+
+}
+
+#logo {
+    float: left;
+    margin: 5px;
+    padding-left: 2%;
+}
+
+#nav {
+    position: absolute;
+    left: 37.578%;
+}
+
+nav a {
+    color: #5869FF;
+    text-decoration: none;
+}
+nav a:hover {
+    color: #d60af1;
+    font-weight: 700;
+    text-decoration: underline;
 }
