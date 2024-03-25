@@ -23,14 +23,17 @@ header {
     margin: 0px;
     padding: 0px;
     background-color: white;
-    height: 70px;
+    max-height: 10vmax;
+    min-height: 9vmin;
 }
 .logo-icon {
-    height: 4vw;
+    max-height: 3.8vmax;
+    min-height: 33px;
 }
 
 .rede-icon {
-    height: 6vh;
+    max-width: 2.5vmax;
+    min-width: 4px;
     padding-left: 20px;
 }
 
@@ -40,7 +43,7 @@ header {
 
 .home-geral p {
     padding: 15px;
-    font-size: 32px;
+    font-size: vmax;
     margin: 0px;
     
 }
@@ -49,7 +52,7 @@ header {
     float: right;
     margin: 13px;
     padding-right: 2%;
-
+    margin: 10px 0px 0px 0px;
 }
 
 #logo {
@@ -59,8 +62,9 @@ header {
 }
 
 #nav {
+    
     position: absolute;
-    left: 37.578%;
+    left: 37.25%;
 }
 
 nav a {
