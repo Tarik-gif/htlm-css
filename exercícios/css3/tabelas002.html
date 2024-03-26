@@ -9,13 +9,14 @@
             font-family: Arial, Helvetica, sans-serif;
         }
         table {
-            width: 400px;
+            width: 600px;
             padding: 8px;
             border-collapse: collapse;
+            position: relative;
         }
         
         td, th {
-            border: 1px solid black;
+            border: 1px solid rgb(0, 0, 0);
             padding: 8px;
         }
         td {
@@ -23,22 +24,46 @@
             vertical-align: middle;
         }
 
-        th {
+        thead, tfoot {
             color: white;
-            background-color: gray;
+            background-color: rgb(68, 68, 68);
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(68, 68, 68);
+        }
+
+        caption {
+            background-color: lightgray;
+            font-size: 1.3em;
+            padding: 8px;
+            font-weight: bold;
         }
 
         .porcentagem::after {
-            content: %;
+            content: "%";
+        }
+        .porcentagem {
+            text-align: right;
+        }
+
+        td.num {
+            text-align: right;
         }
         
+        tbody > tr:nth-child(2n) { /*even (par) ou odd (impar)*/
+            background-color: lightgray;
+        }
 
     </style>
 </head>
 <body>
     <!--
         Anatomia para tabelas grandes
-        TABLE 
+        TABLE
+          CAPTION
           THEAD
             TR,TD,TH
           TBODY
@@ -47,54 +72,195 @@
             TR,TD,TH
     -->
     <table>
+        <caption>Populações das 5 maiores unidades federativas</caption>
         <thead>
             <tr>
-                <th>Posição</th>
-                <th>Estado</th>
-                <th>População</th>
-                <th>% da pop. total</th>
+                <th scope="col">Posição</th>
+                <th scope="col" style="width: 200px;">Estado</th>
+                <th scope="col">População</th>
+                <th scope="col">% da pop. total</th>
             </tr>
         </thead>
         <tbody>
             <tr>
                 <td>1</td>
                 <td>São Paulo</td>
-                <td>45.919.049</td>
+                <td class="num">45.919.049</td>
                 <td class="porcentagem">21.9</td>
             </tr>
             <tr>
                 <td>2</td>
                 <td>Minas Gerais</td>
-                <td>21.168.791</td>
+                <td class="num">21.168.791</td>
                 <td class="porcentagem">10.1</td>
             </tr>
             <tr>
                 <td>3</td>
                 <td>Rio de Janeiro</td>
-                <td>17.264.943</td>
+                <td class="num">17.264.943</td>
                 <td class="porcentagem">8.2</td>
             </tr>
             <tr>
                 <td>4</td>
                 <td>Bahia</td>
-                <td>14.873.064</td>
+                <td class="num">14.873.064</td>
                 <td class="porcentagem">7.1</td>
             </tr>
             <tr>
                 <td>5</td>
                 <td>Paraná</td>
-                <td>11.433.957</td>
+                <td class="num">11.433.957</td>
                 <td class="porcentagem">5.4</td>
             </tr>
+            <tr>
+                <td>#</td>
+                <td>########</td>
+                <td class="num">#############</td>
+                <td class="porcentagem">#####</td>
+            </tr>
+            <tr>
+                <td>#</td>
+                <td>########</td>
+                <td class="num">#############</td>
+                <td class="porcentagem">#####</td>
+            </tr>
+            <tr>
+                <td>#</td>
+                <td>########</td>
+                <td class="num">#############</td>
+                <td class="porcentagem">#####</td>
+            </tr>
+            <tr>
+                <td>#</td>
+                <td>########</td>
+                <td class="num">#############</td>
+                <td class="porcentagem">#####</td>
+            </tr>
+            <tr>
+                <td>#</td>
+                <td>########</td>
+                <td class="num">#############</td>
+                <td class="porcentagem">#####</td>
+            </tr>
+            <tr>
+                <td>#</td>
+                <td>########</td>
+                <td class="num">#############</td>
+                <td class="porcentagem">#####</td>
+            </tr>
+            <tr>
+                <td>#</td>
+                <td>########</td>
+                <td class="num">#############</td>
+                <td class="porcentagem">#####</td>
+            </tr>
+            <tr>
+                <td>#</td>
+                <td>########</td>
+                <td class="num">#############</td>
+                <td class="porcentagem">#####</td>
+            </tr>
+            <tr>
+                <td>#</td>
+                <td>########</td>
+                <td class="num">#############</td>
+                <td class="porcentagem">#####</td>
+            </tr>
+            <tr>
+                <td>#</td>
+                <td>########</td>
+                <td class="num">#############</td>
+                <td class="porcentagem">#####</td>
+            </tr>
+            <tr>
+                <td>#</td>
+                <td>########</td>
+                <td class="num">#############</td>
+                <td class="porcentagem">#####</td>
+            </tr>
+            <tr>
+                <td>#</td>
+                <td>########</td>
+                <td class="num">#############</td>
+                <td class="porcentagem">#####</td>
+            </tr>
+            <tr>
+                <td>#</td>
+                <td>########</td>
+                <td class="num">#############</td>
+                <td class="porcentagem">#####</td>
+            </tr>
+            <tr>
+                <td>#</td>
+                <td>########</td>
+                <td class="num">#############</td>
+                <td class="porcentagem">#####</td>
+            </tr>
+            <tr>
+                <td>#</td>
+                <td>########</td>
+                <td class="num">#############</td>
+                <td class="porcentagem">#####</td>
+            </tr>
+            <tr>
+                <td>#</td>
+                <td>########</td>
+                <td class="num">#############</td>
+                <td class="porcentagem">#####</td>
+            </tr>
+            <tr>
+                <td>#</td>
+                <td>########</td>
+                <td class="num">#############</td>
+                <td class="porcentagem">#####</td>
+            </tr>
+            <tr>
+                <td>#</td>
+                <td>########</td>
+                <td class="num">#############</td>
+                <td class="porcentagem">#####</td>
+            </tr>
+            <tr>
+                <td>#</td>
+                <td>########</td>
+                <td class="num">#############</td>
+                <td class="porcentagem">#####</td>
+            </tr>
+            <tr>
+                <td>#</td>
+                <td>########</td>
+                <td class="num">#############</td>
+                <td class="porcentagem">#####</td>
+            </tr>
+            <tr>
+                <td>#</td>
+                <td>########</td>
+                <td class="num">#############</td>
+                <td class="porcentagem">#####</td>
+            </tr>
+            <tr>
+                <td>#</td>
+                <td>########</td>
+                <td class="num">#############</td>
+                <td class="porcentagem">#####</td>
+            </tr>
+
+
         </tbody>
         <tfoot>
             <tr>
                 <th>###</th>
-                <th>Total</th>
-                <td>0000</td>
-                <td class="porcentagem">0000</td>
+                <th scope="row">Total</th>
+                <td class="num"><strong>110.659.804</strong></td>
+                <td class="porcentagem"><strong>52.7</strong></td>
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam doloribus necessitatibus placeat consectetur eaque itaque quas, odit, eum minima repellendus praesentium nemo numquam in ratione! Dolores eum sapiente cupiditate laboriosam?Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet nemo placeat laboriosam incidunt dignissimos minima laudantium, odio mollitia, nulla atque aliquid vitae maxime ducimus voluptatibus at, ab inventore provident? Aspernatur!Lorem Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique, obcaecati saepe culpa repellat eos aspernatur quas? Facere beatae reiciendis eveniet nesciunt perferendis. At quae quibusdam molestias vel nobis. Pariatur, ut.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam doloribus necessitatibus placeat consectetur eaque itaque quas, odit, eum minima repellendus praesentium nemo numquam in ratione! Dolores eum sapiente cupiditate laboriosam?Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet nemo placeat laboriosam incidunt dignissimos minima laudantium, odio mollitia, nulla atque aliquid vitae maxime ducimus voluptatibus at, ab inventore provident? Aspernatur!Lorem Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique, obcaecati saepe culpa repellat eos aspernatur quas? Facere beatae reiciendis eveniet nesciunt perferendis. At quae quibusdam molestias vel nobis. Pariatur, ut.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam doloribus necessitatibus placeat consectetur eaque itaque quas, odit, eum minima repellendus praesentium nemo numquam in ratione! Dolores eum sapiente cupiditate laboriosam?Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet nemo placeat laboriosam incidunt dignissimos minima laudantium, odio mollitia, nulla atque aliquid vitae maxime ducimus voluptatibus at, ab inventore provident? Aspernatur!Lorem Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique, obcaecati saepe culpa repellat eos aspernatur quas? Facere beatae reiciendis eveniet nesciunt perferendis. At quae quibusdam molestias vel nobis. Pariatur, ut.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam doloribus necessitatibus placeat consectetur eaque itaque quas, odit, eum minima repellendus praesentium nemo numquam in ratione! Dolores eum sapiente cupiditate laboriosam?Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet nemo placeat laboriosam incidunt dignissimos minima laudantium, odio mollitia, nulla atque aliquid vitae maxime ducimus voluptatibus at, ab inventore provident? Aspernatur!Lorem Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique, obcaecati saepe culpa repellat eos aspernatur quas? Facere beatae reiciendis eveniet nesciunt perferendis. At quae quibusdam molestias vel nobis. Pariatur, ut.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam doloribus necessitatibus placeat consectetur eaque itaque quas, odit, eum minima repellendus praesentium nemo numquam in ratione! Dolores eum sapiente cupiditate laboriosam?Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet nemo placeat laboriosam incidunt dignissimos minima laudantium, odio mollitia, nulla atque aliquid vitae maxime ducimus voluptatibus at, ab inventore provident? Aspernatur!Lorem Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique, obcaecati saepe culpa repellat eos aspernatur quas? Facere beatae reiciendis eveniet nesciunt perferendis. At quae quibusdam molestias vel nobis. Pariatur, ut.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam doloribus necessitatibus placeat consectetur eaque itaque quas, odit, eum minima repellendus praesentium nemo numquam in ratione! Dolores eum sapiente cupiditate laboriosam?Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet nemo placeat laboriosam incidunt dignissimos minima laudantium, odio mollitia, nulla atque aliquid vitae maxime ducimus voluptatibus at, ab inventore provident? Aspernatur!Lorem Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique, obcaecati saepe culpa repellat eos aspernatur quas? Facere beatae reiciendis eveniet nesciunt perferendis. At quae quibusdam molestias vel nobis. Pariatur, ut.</p>
 </body>
 </html>

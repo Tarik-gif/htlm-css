@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            width: 600px;
+            padding: 8px;
+            border-collapse: collapse;
+            position: relative;
+        }
+        
+        td, th {
+            border: 1px solid rgb(0, 0, 0);
+            padding: 8px;
+        }
+        td {
+            text-align: left;
+            vertical-align: middle;
+        }
+
+        thead, tfoot {
+            color: white;
+            background-color: rgb(68, 68, 68);
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(68, 68, 68);
+        }
+
+        caption {
+            background-color: lightgray;
+            font-size: 1.3em;
+            padding: 8px;
+            font-weight: bold;
+        }
+
+        .porcentagem::after {
+            content: "%";
+        }
+        .porcentagem {
+            text-align: right;
+        }
+
+        td.num {
+            text-align: right;
+        }
+        
+        tbody > tr:nth-child(2n) { /*even (par) ou odd (impar)*/
+            background-color: lightgray;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Mesclagem de Células</h1>
+    <table>
+        <caption>Populações das 5 maiores unidades federativas</caption>
+        <thead>
+
+        </thead>
+        <tbody>
+
+        </tbody>
+        <tfoot>
+
+        </tfoot>
+    </table>
+</body>
+</html>
