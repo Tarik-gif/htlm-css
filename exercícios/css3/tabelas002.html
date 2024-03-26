@@ -10,43 +10,91 @@
         }
         table {
             width: 400px;
-            height: 400px;
+            padding: 8px;
             border-collapse: collapse;
         }
         
-        td {
+        td, th {
             border: 1px solid black;
             padding: 8px;
-            text-align: center;
+        }
+        td {
+            text-align: left;
             vertical-align: middle;
+        }
+
+        th {
+            color: white;
+            background-color: gray;
+        }
+
+        .porcentagem::after {
+            content: %;
         }
         
 
     </style>
 </head>
 <body>
-    <h1>Minha primeira tabela</h1>
+    <!--
+        Anatomia para tabelas grandes
+        TABLE 
+          THEAD
+            TR,TD,TH
+          TBODY
+            TR,TD,TH
+          TFOOT
+            TR,TD,TH
+    -->
     <table>
-        <tr> 
-            <td>A1</td>
-            <td>B1</td>
-            <td>C1</td>
-        </tr>
-        <tr>
-            <td>A2</td>
-            <td>B2</td>
-            <td>C2</td>
-        </tr>
-        <tr>
-            <td>A3
-            <td>B3
-            <td>C3
-
-        <tr>
-            <td>A4</td>
-            <td>B4</td>
-            <td>C4</td>
-        </tr>
+        <thead>
+            <tr>
+                <th>Posição</th>
+                <th>Estado</th>
+                <th>População</th>
+                <th>% da pop. total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>São Paulo</td>
+                <td>45.919.049</td>
+                <td class="porcentagem">21.9</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Minas Gerais</td>
+                <td>21.168.791</td>
+                <td class="porcentagem">10.1</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Rio de Janeiro</td>
+                <td>17.264.943</td>
+                <td class="porcentagem">8.2</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Bahia</td>
+                <td>14.873.064</td>
+                <td class="porcentagem">7.1</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Paraná</td>
+                <td>11.433.957</td>
+                <td class="porcentagem">5.4</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>###</th>
+                <th>Total</th>
+                <td>0000</td>
+                <td class="porcentagem">0000</td>
+            </tr>
+        </tfoot>
     </table>
 </body>
 </html>
