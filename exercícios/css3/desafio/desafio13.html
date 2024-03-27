@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabelas</title>
+    <title>TabelasDesafio</title>
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
@@ -12,38 +12,78 @@
             padding: 8px;
             border-collapse: collapse;
             position: relative;
+            margin-bottom: 70px;
         }
         table {
             border-collapse: collapse;
-            width: 300px;
         }
         td {
             border: 1px solid black;
-            padding: 10px;
+            padding: 10px 10px;
+            width: 50px;
             text-align: center;
             vertical-align: middle;
+        }
+        caption {
+            margin-bottom: 5px;
         }
 
     </style>
 </head>
 <body>
-    <h1>Mesclagem de Células</h1>
+    <h1>Desafio13</h1>
     <table>
+        <caption>part1</caption>
         <tr>
-            <td>A</td>
-            <td colspan="2">B</td>
+            <td>1</td>
+            <td>2</td>
+            <td rowspan="2">3</td>
+            <td>4</td>
         </tr>
         <tr>
-            <td rowspan="3">D</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td colspan="3">8</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <td rowspan="2">10</td>
+            <td colspan="2">11</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+        </tr>
+    </table>
+    <table>
+        <caption>part2</caption>
+        <tr>
+            <td colspan="4">A</td>
+            <td rowspan="4">B</td>
+        </tr>
+        <tr>
+            <td rowspan="4">C</td>
+            <td>D</td>
             <td>E</td>
-            <td rowspan="2">F</td>
+            <td>F</td>
         </tr>
         <tr>
+            <td>G</td>
             <td>H</td>
+            <td>I</td>
         </tr>
         <tr>
-            <td>K</td>
+            <td>J</td>
             <td>L</td>
+            <td>M</td>
+        </tr>
+        <tr>
+            <td colspan="4">N</td>
         </tr>
 
     </table>
