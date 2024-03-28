@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe {
+            border: 1px solid black;
+            height: 400px;
+            width: 98vw;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos incidunt consequatur vero excepturi obcaecati eveniet harum non laudantium, dolorem ratione nam, minus quibusdam dolore optio adipisci. Repudiandae laudantium a dignissimos.</p>
+    <ul>
+        <li><a href="pagina1.html" target="frame">1 pagina</a></li>
+        <li><a href="pagina2.html" target="frame">2 pagina</a></li>
+    </ul>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A provident placeat, explicabo laboriosam sed aliquid vero amet cumque dolorem temporibus facilis corporis voluptatibus autem deleniti id quia. Commodi, praesentium illum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum, consequuntur reprehenderit odit sunt iusto excepturi nobis distinctio, magnam eius, quam velit rerum ducimus. Nostrum dolore laborum adipisci hic exercitationem voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet maiores reprehenderit impedit expedita reiciendis est nihil. Esse debitis hic natus iste alias excepturi fugit consequatur, ipsam, adipisci eos dicta voluptatibus.</p>
+
+    <iframe srcdoc="<h1>Escolha uma das opções acima</h1><p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse reprehenderit facilis vero quaerat obcaecati numquam officia sunt quisquam, ipsum voluptate quasi qui dolorem animi voluptates omnis praesentium inventore, nam quam. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>" id="tela" name="frame">
+        <p>infelizmente o seu navegador não é compativel com isso.</p>
+    </iframe>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse reprehenderit facilis vero quaerat obcaecati numquam officia sunt quisquam, ipsum voluptate quasi qui dolorem animi voluptates omnis praesentium inventore, nam quam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, voluptatibus sapiente. Deleniti aliquam culpa tempora eius ipsa dicta suscipit, fuga omnis consequuntur, soluta, molestiae voluptates nisi cum quasi? Sint, consequuntur? lorem</p>
+</body>
+</html>
